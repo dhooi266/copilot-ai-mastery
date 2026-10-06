@@ -1,0 +1,844 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Copilot AI Agents &amp; Vibe Coding Mastery | David Hooi</title>
+<meta name="description" content="Copilot AI Agents &amp; Vibe Coding Mastery: a 2-day hands-on corporate programme by David Hooi. Build AI assistants, data dashboards and working apps with Microsoft 365 Copilot Chat - no premium licence needed. HRD Corp claimable.">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="D Action Consultancy &amp; Services Sdn Bhd">
+<meta property="og:locale" content="en_MY">
+<meta property="og:title" content="Copilot AI Agents &amp; Vibe Coding Mastery">
+<meta property="og:description" content="2-day hands-on programme: build AI assistants, dashboards and apps with the Microsoft 365 Copilot you already have. No premium licence needed. HRD Corp claimable.">
+<meta property="og:image" content="https://dhooi266.github.io/copilot-ai-mastery/og-share-v1.jpg">
+<meta property="og:image:secure_url" content="https://dhooi266.github.io/copilot-ai-mastery/og-share-v1.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Copilot AI Agents &amp; Vibe Coding Mastery - trainer David Hooi, D Action Consultancy.">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Copilot AI Agents &amp; Vibe Coding Mastery">
+<meta name="twitter:description" content="Build AI assistants, dashboards and apps with Microsoft 365 Copilot Chat - no premium licence needed. HRD Corp claimable.">
+<meta name="twitter:image" content="https://dhooi266.github.io/copilot-ai-mastery/og-share-v1.jpg">
+
+<meta name="theme-color" content="#0f4a33">
+<link rel="icon" href="assets/dac-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap">
+
+<style>
+:root{
+  --green:#0f4a33;
+  --green-2:#16613f;
+  --green-soft:#e9f3ee;
+  --orange:#e8792f;
+  --orange-2:#c95f17;
+  --orange-soft:#fdf0e6;
+  --ink:#14211b;
+  --muted:#58665f;
+  --line:#dfe6e2;
+  --bg:#ffffff;
+  --bg-2:#f6f8f6;
+  --card:#ffffff;
+  --radius:18px;
+  --shadow:0 1px 2px rgba(15,74,51,.06),0 10px 30px rgba(15,74,51,.07);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Plus Jakarta Sans","Noto Sans SC",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;
+}
+html[data-lang="zh"] body{font-family:"Noto Sans SC","Plus Jakarta Sans",system-ui,sans-serif;line-height:1.75}
+[data-lang="en"] .zh,[data-lang="zh"] .en{display:none !important}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+h1,h2,h3{line-height:1.15;margin:0;letter-spacing:-.02em}
+html[data-lang="zh"] h1,html[data-lang="zh"] h2,html[data-lang="zh"] h3{letter-spacing:0;line-height:1.3}
+h2{font-size:clamp(28px,3.6vw,42px);font-weight:800}
+h3{font-size:19px;font-weight:700}
+p{margin:0}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--orange-2)}
+html[data-lang="zh"] .eyebrow{letter-spacing:.06em}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--orange)}
+.sec{padding:88px 0}
+.sec-head{max-width:720px;margin-bottom:44px}
+.sec-head p{color:var(--muted);margin-top:14px;font-size:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 24px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none;border:2px solid transparent;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--orange);color:#fff}
+.btn-primary:hover{background:var(--orange-2)}
+.btn-ghost{border-color:rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:12px}
+.nav .logo img{height:40px;width:auto}
+.nav-right{display:flex;align-items:center;gap:12px}
+.lang{display:flex;background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:3px}
+.lang button{border:0;background:transparent;font:inherit;font-size:14px;font-weight:700;padding:7px 14px;border-radius:999px;cursor:pointer;color:var(--muted)}
+.lang button[aria-pressed="true"]{background:var(--green);color:#fff}
+.nav .btn{padding:10px 18px;font-size:14px}
+
+/* hero */
+.hero{background:radial-gradient(900px 500px at 85% 10%,rgba(232,121,47,.22),transparent 60%),linear-gradient(160deg,#0b3a28 0%,#0f4a33 55%,#145a3e 100%);color:#fff;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding-top:72px;padding-bottom:72px}
+.hero .eyebrow{color:#ffb27a}
+.hero .eyebrow::before{background:#ffb27a}
+.hero h1{font-size:clamp(36px,5.2vw,62px);font-weight:800;margin:18px 0 20px}
+.hero h1 em{font-style:normal;color:#ffb27a}
+.hero h1 small{display:block;font-size:.44em;font-weight:700;color:rgba(255,255,255,.82);margin-top:12px;letter-spacing:0}
+html[data-lang="zh"] .hero h1 small{font-size:.34em;color:rgba(255,255,255,.62)}
+.hero .tagline{font-size:20px;font-weight:700;color:#fff;margin:0 0 14px;padding-left:14px;border-left:3px solid var(--orange)}
+.hero .lead{font-size:19px;color:rgba(255,255,255,.85);max-width:560px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.hero-tags span{font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18)}
+.hero-photo{position:relative;justify-self:center;width:100%;max-width:420px}
+.hero-photo .frame{border-radius:28px;overflow:hidden;background:#0b3a28;box-shadow:0 30px 60px rgba(0,0,0,.35);aspect-ratio:4/4.8}
+.hero-photo .frame img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.hero-photo .badge{position:absolute;left:-26px;bottom:28px;background:#fff;color:var(--ink);border-radius:16px;padding:12px 16px;display:flex;gap:12px;align-items:center;box-shadow:0 14px 30px rgba(0,0,0,.25)}
+.hero-photo .badge{text-decoration:none;transition:transform .2s}
+.hero-photo .badge:hover{transform:translateY(-3px)}
+.hero-photo .badge img.av{width:54px;height:54px;border-radius:50%;object-fit:cover;object-position:top;border:3px solid var(--orange)}
+.hero-photo .badge strong{display:block;font-size:15px}
+.hero-photo .badge small{display:block;color:var(--muted);font-size:13px}
+.hero-photo .badge small:first-child{color:var(--orange-2);font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+
+/* stats */
+.stats{background:var(--bg-2);border-bottom:1px solid var(--line)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:30px 16px;text-align:center;border-right:1px solid var(--line)}
+.stat:last-child{border-right:0}
+.stat b{display:block;font-size:clamp(28px,3.4vw,40px);font-weight:800;color:var(--green);line-height:1.1}
+.stat span{color:var(--muted);font-size:14px;font-weight:500}
+
+/* gains */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+.card .ic{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:var(--green-soft);color:var(--green);margin-bottom:18px}
+.card .ic svg{width:24px;height:24px}
+.card h3{margin-bottom:10px}
+.card p{color:var(--muted);font-size:16px}
+.card .tools{margin-top:14px;font-size:13px;font-weight:600;color:var(--green-2)}
+
+/* deliverables */
+.deliver{background:var(--green);color:#fff}
+.deliver .sec-head p{color:rgba(255,255,255,.78)}
+.deliver .eyebrow{color:#ffb27a}.deliver .eyebrow::before{background:#ffb27a}
+.dl{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;counter-reset:d}
+.dl li{list-style:none;display:flex;gap:18px;align-items:flex-start;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:22px}
+.dl li::before{counter-increment:d;content:counter(d,decimal-leading-zero);font-weight:800;font-size:15px;color:var(--green);background:#ffb27a;border-radius:10px;min-width:40px;height:40px;display:grid;place-items:center}
+.dl strong{display:block;font-size:18px;margin-bottom:4px}
+.dl span{color:rgba(255,255,255,.75);font-size:15px}
+.dl{padding:0;margin:0}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center}
+.about-p{color:var(--muted);margin-top:16px;font-size:18px}
+.about-p b{color:var(--ink)}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fact{background:var(--green);color:#fff;border-radius:var(--radius);padding:24px 20px;transition:transform .2s}
+.fact:nth-child(2),.fact:nth-child(3){background:var(--orange-soft);color:var(--ink)}
+.fact:hover{transform:translateY(-4px)}
+.fact b{display:block;font-size:40px;font-weight:800;line-height:1}
+.fact b small{font-size:.45em;margin-left:4px}
+.fact:nth-child(2) b,.fact:nth-child(3) b{color:var(--orange-2)}
+.fact span{display:block;margin-top:8px;font-size:15px;font-weight:600;opacity:.9}
+
+/* explorer */
+.explorer{background:var(--bg-2)}
+.rolefinder{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);margin-bottom:28px}
+.rf-q{font-weight:700;margin-bottom:12px}
+.roles{display:flex;flex-wrap:wrap;gap:10px}
+.rf-q2{margin-top:20px}
+.ind{font:inherit;font-size:14px;font-weight:600;padding:8px 15px;border-radius:999px;border:1.5px dashed var(--line);background:var(--bg-2);color:var(--ink);cursor:pointer;transition:all .15s}
+.ind:hover{border-color:var(--orange);color:var(--orange-2)}
+.ind[aria-pressed="true"]{background:var(--orange);border:1.5px solid var(--orange);color:#fff}
+#rfInd li{background:var(--orange-soft);color:var(--orange-2)}
+#rfRole+#rfInd:not([hidden]){margin-top:18px}
+.role{font:inherit;font-size:15px;font-weight:600;padding:10px 18px;border-radius:999px;border:1.5px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;transition:all .15s}
+.role:hover{border-color:var(--green-2);color:var(--green)}
+.role[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#fff}
+.rf-out{margin-top:20px;padding-top:18px;border-top:1px dashed var(--line);animation:fade .35s ease}
+.rf-h{font-weight:700;color:var(--orange-2);margin-bottom:10px}
+.rf-out ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.rf-out li{background:var(--green-soft);border-radius:12px;padding:14px 16px;font-weight:600;font-size:15px;color:var(--green)}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+.tabs button{position:relative;font:inherit;text-align:left;cursor:pointer;border:1.5px solid var(--line);background:#fff;border-radius:16px;padding:16px 20px;display:flex;flex-direction:column;gap:2px;color:var(--ink);transition:all .15s}
+.tabs button b{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--orange-2)}
+.tabs button span{font-weight:700;font-size:17px}
+.tabs button[aria-selected="true"]{background:var(--green);border-color:var(--green);color:#fff;box-shadow:0 12px 28px rgba(15,74,51,.25)}
+.tabs button[aria-selected="true"] b{color:#ffb27a}
+.cnt{position:absolute;top:12px;right:14px;font-style:normal;font-size:12px;font-weight:800;background:var(--orange);color:#fff;border-radius:999px;padding:2px 9px;display:none}
+.cnt.on{display:block}
+.pane{display:grid;gap:12px;animation:fade .3s ease}
+.pane[hidden]{display:none}
+.mod{background:#fff;border:1.5px solid var(--line);border-radius:16px;overflow:hidden;transition:border-color .2s,box-shadow .2s,opacity .2s}
+.mod summary{list-style:none;display:flex;align-items:center;gap:16px;padding:18px 20px;cursor:pointer}
+.mod summary::-webkit-details-marker{display:none}
+.mod .mn{flex:none;width:46px;height:46px;border-radius:12px;background:var(--green-soft);color:var(--green);font-weight:800;display:grid;place-items:center;transition:background .2s,color .2s}
+.mod[open] .mn{background:var(--green);color:#fff}
+.mt{flex:1;min-width:0}
+.mt small{display:block;font-size:13px;font-weight:600;color:var(--muted)}
+.mt strong{font-size:18px;line-height:1.35}
+.rel{display:none;flex:none;font-size:12px;font-weight:800;color:#fff;background:var(--orange);padding:4px 10px;border-radius:999px}
+.chev{flex:none;width:12px;height:12px;border-right:2.5px solid var(--muted);border-bottom:2.5px solid var(--muted);transform:rotate(45deg);transition:transform .2s;margin:0 6px 6px 0}
+.mod[open] .chev{transform:rotate(-135deg);margin:6px 6px 0 0}
+.mb{padding:0 20px 20px 82px}
+.mb ul{margin:0 0 14px;padding-left:18px;color:var(--muted)}
+.mb li{margin:4px 0}
+.mb li b{color:var(--ink)}
+.ex{background:var(--orange-soft);border-radius:12px;padding:12px 16px;font-size:15px}
+.ex b{color:var(--orange-2)}
+.explorer.filtering .mod{opacity:.5}
+.explorer.filtering .mod.hl{opacity:1;border-color:var(--orange);box-shadow:0 10px 26px rgba(232,121,47,.15)}
+.mod.hl .rel{display:inline-block}
+@media (max-width:960px){.about-grid{grid-template-columns:1fr;gap:32px}.rf-out ul{grid-template-columns:1fr}}
+@media (max-width:640px){.mb{padding:0 16px 18px}.mod summary{padding:16px;gap:12px}.mod .mn{width:40px;height:40px}.mt strong{font-size:16px}.rel{display:none!important}.tabs button{padding:14px}.tabs button span{font-size:15px}.fact b{font-size:32px}}
+
+/* impact */
+.impact{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.imp{border-top:3px solid var(--orange);padding-top:20px}
+.imp h3{margin-bottom:8px}
+.imp p{color:var(--muted);font-size:16px}
+
+/* tools strip */
+.toolwall{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px}
+.toolwall span{padding:9px 16px;border-radius:999px;background:var(--bg-2);border:1px solid var(--line);font-weight:600;font-size:15px}
+
+/* how */
+.how{background:var(--bg-2)}
+.how-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.steps{display:grid;gap:14px}
+.step{display:flex;gap:16px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}
+.step .n{flex:none;width:36px;height:36px;border-radius:50%;background:var(--orange-soft);color:var(--orange-2);font-weight:800;display:grid;place-items:center}
+.step h3{font-size:17px;margin-bottom:4px}
+.step p{color:var(--muted);font-size:15px}
+.mix{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+.bar{display:flex;height:16px;border-radius:999px;overflow:hidden;margin:16px 0 10px}
+.bar i:first-child{background:var(--orange);width:70%}
+.bar i:last-child{background:var(--green);width:30%}
+.legend{display:flex;justify-content:space-between;font-size:14px;color:var(--muted);font-weight:600}
+.legend b{color:var(--ink)}
+.who{margin-top:28px}
+.who h3{margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{font-size:14px;font-weight:600;padding:7px 13px;border-radius:999px;background:var(--green-soft);color:var(--green)}
+
+/* trainer */
+.trainer-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.t-photo{position:relative}
+.t-photo img.main{border-radius:24px;width:100%;aspect-ratio:4/4.8;object-fit:cover;object-position:top;box-shadow:var(--shadow)}
+.t-photo .quote{position:absolute;right:-18px;bottom:-22px;background:var(--orange);color:#fff;font-weight:700;font-size:17px;line-height:1.35;padding:18px 20px;border-radius:16px;max-width:250px;box-shadow:0 14px 30px rgba(201,95,23,.35)}
+.trainer h2 small{font-size:.5em;color:var(--green-2);font-weight:700;margin-left:6px}
+.t-role{color:var(--orange-2);font-weight:700;margin:10px 0 22px}
+.trainer p.bio{color:var(--muted);margin-bottom:14px}
+.trainer p.bio b{color:var(--ink)}
+.creds{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:26px}
+.cred{display:flex;gap:12px;align-items:center;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--bg-2);font-weight:600;font-size:15px}
+.cred svg{width:22px;height:22px;color:var(--green);flex:none}
+
+/* brands */
+.brands{background:var(--bg-2);padding:72px 0}
+.brands .box{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+.brands img{margin:0 auto;max-height:560px;width:auto}
+.brands h2{text-align:center;margin-bottom:10px}
+.brands .sub{text-align:center;color:var(--muted);margin-bottom:28px}
+
+/* logo strip */
+.logostrip{padding:34px 0 30px;border-bottom:1px solid var(--line);overflow:hidden}
+.ls-title{text-align:center;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:20px}
+.marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;align-items:center;gap:56px;width:max-content;animation:scroll 60s linear infinite}
+.track img{height:46px;width:auto;flex:none;mix-blend-mode:multiply}
+.marquee:hover .track{animation-play-state:paused}
+@keyframes scroll{to{transform:translateX(calc(-50% - 28px))}}
+.logogrid{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+.logogrid div{flex:0 0 calc((100% - 6*14px)/7)}
+.logogrid div{height:96px;display:grid;place-items:center;border:1px solid var(--line);border-radius:14px;padding:14px;background:#fff;transition:transform .2s,box-shadow .2s}
+.logogrid div:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.logogrid img{max-height:62px;max-width:100%;width:auto;object-fit:contain;mix-blend-mode:multiply}
+@media (prefers-reduced-motion:reduce){.track{animation:none;flex-wrap:wrap;justify-content:center;width:auto}.track img[aria-hidden]{display:none}}
+@media (max-width:960px){.logogrid div{flex-basis:calc((100% - 4*14px)/5)}}
+@media (max-width:640px){.track img{height:36px}.track{gap:40px}.logogrid{gap:10px}.logogrid div{flex-basis:calc((100% - 2*10px)/3)}.logogrid div{height:78px;padding:10px}}
+
+/* cta */
+.cta{background:radial-gradient(700px 400px at 90% 0%,rgba(232,121,47,.25),transparent 60%),var(--green);color:#fff;text-align:center}
+.cta h2{max-width:760px;margin:0 auto 16px}
+.cta p{color:rgba(255,255,255,.8);max-width:620px;margin:0 auto;font-size:18px}
+.cta .hero-cta{justify-content:center}
+.contact{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 32px;margin-top:36px;font-weight:600}
+.contact a{text-decoration:none;display:inline-flex;gap:8px;align-items:center;color:rgba(255,255,255,.9)}
+.contact a:hover{color:#ffb27a}
+.contact svg{width:18px;height:18px}
+footer{background:#0b3a28;color:rgba(255,255,255,.6);font-size:14px;padding:28px 0}
+footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer .flogo{background:#fff;border-radius:12px;padding:8px 14px;display:inline-flex}
+footer .flogo img{height:38px;width:auto}
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+.card,.step,.cred{transition:transform .2s,box-shadow .2s,border-color .2s}
+.card:hover{transform:translateY(-4px);border-color:#b9d6c7;box-shadow:0 18px 40px rgba(15,74,51,.13)}
+.card:hover .ic{background:var(--green);color:#fff}
+.card .ic{transition:background .2s,color .2s}
+.step:hover{transform:translateX(4px)}
+.dl li{transition:background .2s}
+.dl li:hover{background:rgba(255,255,255,.11)}
+@media (prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}*{scroll-behavior:auto}}
+
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+.wa-float svg{width:30px;height:30px;color:#fff}
+
+@media (max-width:960px){
+  .hero .wrap,.how-grid,.trainer-grid{grid-template-columns:1fr}
+  .hero-photo{max-width:360px}
+  .grid-3{grid-template-columns:1fr 1fr}
+  .impact{grid-template-columns:1fr 1fr}
+  .t-photo{max-width:420px}
+}
+@media (max-width:640px){
+  .sec{padding:64px 0}
+  .wrap{padding:0 16px}
+  .grid-3,.dl,.impact,.creds{grid-template-columns:1fr}
+  .stats .wrap{grid-template-columns:1fr 1fr}
+  .stat:nth-child(2){border-right:0}
+  .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .nav .btn{display:none}
+  .hero .wrap{padding-top:48px;padding-bottom:56px}
+  .hero-photo .badge{left:8px;bottom:12px}
+  .t-photo .quote{right:8px}
+  .hero-cta .btn{flex:1 1 100%}
+}
+
+/* --- additions for Copilot course --- */
+.tabs button span{line-height:1.3}
+.licence{background:var(--bg-2)}
+.lic-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:stretch}
+.lic-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+.lic-card h3{margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.lic-card h3 .pill{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:var(--green-soft);color:var(--green)}
+.inc{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.inc li{display:flex;gap:12px;align-items:flex-start;font-size:16px}
+.inc li svg{flex:none;width:22px;height:22px;color:#fff;background:var(--green);border-radius:50%;padding:4px;margin-top:2px}
+.inc li b{display:block}
+.inc li span.d{color:var(--muted);font-size:15px}
+.calc{background:var(--green);color:#fff;border-color:var(--green);display:flex;flex-direction:column}
+.calc h3{color:#fff}
+.calc label{display:block;font-size:14px;font-weight:600;color:rgba(255,255,255,.8);margin:14px 0 8px}
+.calc input[type=range]{width:100%;accent-color:var(--orange)}
+.calc .row{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.calc .row output{font-weight:800;font-size:20px;color:#ffb27a}
+.calc .price{display:flex;align-items:center;gap:8px}
+.calc .price input{width:84px;font:inherit;font-weight:700;padding:6px 10px;border-radius:10px;border:0;color:var(--ink)}
+.save{margin-top:22px;padding:20px;border-radius:14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);text-align:center}
+.save small{display:block;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.75)}
+.save b{display:block;font-size:clamp(34px,4vw,46px);font-weight:800;line-height:1.15;color:#fff;margin:6px 0 2px}
+.save span{font-size:14px;color:rgba(255,255,255,.8)}
+.calc .note{margin-top:auto;padding-top:16px;font-size:12.5px;color:rgba(255,255,255,.62);line-height:1.5}
+.honest{margin-top:22px;display:flex;gap:14px;align-items:flex-start;background:var(--orange-soft);border-radius:14px;padding:16px 18px;font-size:15px;color:var(--ink)}
+.honest svg{flex:none;width:22px;height:22px;color:var(--orange-2);margin-top:2px}
+.builds{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.build{position:relative;border-radius:var(--radius);padding:30px 26px 26px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden;transition:transform .2s,box-shadow .2s}
+.build:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(15,74,51,.13)}
+.build::before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:linear-gradient(90deg,var(--green),var(--orange))}
+.build .k{font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--orange-2)}
+.build h3{font-size:22px;margin:8px 0 10px}
+.build p{color:var(--muted);font-size:16px}
+.build ul{margin:14px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.build li{font-size:13px;font-weight:600;padding:6px 11px;border-radius:999px;background:var(--green-soft);color:var(--green)}
+.build .vis{height:120px;margin:-6px -6px 20px;border-radius:12px;background:var(--bg-2);border:1px solid var(--line);display:grid;place-items:center;overflow:hidden}
+.build .vis svg{width:100%;height:100%}
+@media (max-width:960px){.lic-grid{grid-template-columns:1fr}.builds{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.64-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 21.5h-.01a9.4 9.4 0 0 1-4.79-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.42 9.42 0 0 1-1.44-5.02c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.44 9.43zm8.03-17.46A11.27 11.27 0 0 0 12.04.72C5.79.72.69 5.8.69 12.06c0 2 .52 3.95 1.52 5.67L.6 23.28l5.68-1.49a11.3 11.3 0 0 0 5.76 1.47h.01c6.25 0 11.34-5.09 11.35-11.35 0-3.03-1.18-5.88-3.33-8.03z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm-1 1 9 7 9-7"/></symbol>
+  <symbol id="i-web" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></g></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.01"/></g></symbol>
+</svg>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="D Action Consultancy"><img src="assets/dac-logo.png" alt="DAC — Firing Up Growth"></a>
+    <div class="nav-right">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-set-lang="zh" aria-pressed="false">中文</button>
+      </div>
+      <a class="btn btn-primary" href="https://wa.me/60184043913" target="_blank" rel="noopener">
+        <span class="en">Enquire now</span><span class="zh">立即咨询</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow"><span class="en">2-Day Corporate Programme · HRD Corp Claimable</span><span class="zh">两天企业培训课程 · 可申请 HRD Corp</span></span>
+      <h1>
+        <span class="en">Copilot AI Agents &amp; Vibe Coding <em>Mastery</em><small>Build AI assistants, dashboards &amp; apps with the Microsoft 365 you already have</small></span>
+        <span class="zh">Copilot AI 智能体与 Vibe Coding <em>实战大师班</em><small lang="en">Copilot AI Agents &amp; Vibe Coding Mastery</small></span>
+      </h1>
+      <p class="tagline"><span class="en">No premium licence. No coding background. Real solutions in two days.</span><span class="zh">无需高价授权，无需编程背景，两天做出真正可用的方案。</span></p>
+      <p class="lead">
+        <span class="en">Most companies already have Microsoft 365 Copilot Chat — and barely use it. In two hands-on days, your people learn how AI and agents work, then build their own Copilot AI assistant, an interactive data dashboard and a working business app, all within your existing Microsoft 365 plan.</span>
+        <span class="zh">大多数企业早已拥有 Microsoft 365 Copilot Chat，却几乎没有用起来。两天实战课程，先让员工理解AI与智能体如何运作，再亲手打造自己的 Copilot AI助手、互动数据仪表板和可运作的业务应用——全部在现有的 Microsoft 365 方案内完成。</span>
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="https://wa.me/60184043913" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg><span class="en">WhatsApp David</span><span class="zh">WhatsApp 联系 David</span></a>
+        <a class="btn btn-ghost" href="#programme"><span class="en">Explore the programme</span><span class="zh">查看课程内容</span></a>
+      </div>
+      <div class="hero-tags">
+        <span class="en">2-day in-house</span><span class="zh">两天企业内训</span>
+        <span class="en">No Copilot add-on licence needed</span><span class="zh">无需加购 Copilot 授权</span>
+        <span class="en">No coding background</span><span class="zh">无需编程背景</span>
+        <span class="en">English &amp; 中文 delivery</span><span class="zh">中英双语授课</span>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="frame"><img src="assets/course-hero.jpg" alt="A Malaysian corporate team building an AI assistant, a sales dashboard and a business app on their laptops" width="900" height="1350"></div>
+      <a class="badge" href="#trainer">
+        <img class="av" src="assets/david-hooi.jpg" alt="">
+        <div><small><span class="en">Your trainer</span><span class="zh">培训师</span></small><strong>David Hooi</strong><small><span class="en">HRD Corp Accredited Trainer</span><span class="zh">HRD Corp 认证培训师</span></small></div>
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="stats" aria-label="Highlights">
+  <div class="wrap">
+    <div class="stat"><b>6,000+</b><span class="en">professionals trained</span><span class="zh">位专业人士受训</span></div>
+    <div class="stat"><b>100+</b><span class="en">companies served</span><span class="zh">家企业客户</span></div>
+    <div class="stat"><b>3</b><span class="en">working solutions built per participant</span><span class="zh">项可用方案，每位学员亲手完成</span></div>
+    <div class="stat"><b>0</b><span class="en">extra licences to buy</span><span class="zh">额外授权需要购买</span></div>
+  </div>
+</section>
+
+<section class="logostrip" aria-label="Organisations trained">
+  <p class="ls-title"><span class="en">Trusted by teams at</span><span class="zh">合作过的机构包括</span></p>
+  <div class="marquee"><div class="track"><img src="assets/logos/exxonmobil.png" alt="ExxonMobil"><img src="assets/logos/novartis.png" alt="Novartis"><img src="assets/logos/greateastern.png" alt="Great Eastern"><img src="assets/logos/rhb.png" alt="RHB"><img src="assets/logos/kwsp.png" alt="KWSP"><img src="assets/logos/tesla.png" alt="Tesla"><img src="assets/logos/intel.png" alt="Intel"><img src="assets/logos/electrolux.png" alt="Electrolux"><img src="assets/logos/tnb.png" alt="Tenaga Nasional"><img src="assets/logos/drbhicom.png" alt="DRB-HICOM"><img src="assets/logos/uobkayhian.png" alt="UOB Kay Hian"><img src="assets/logos/aon.png" alt="AON"><img src="assets/logos/haier.png" alt="Haier"><img src="assets/logos/sunway.png" alt="Sunway Medical Centre"><img src="assets/logos/nuskin.png" alt="Nu Skin"><img src="assets/logos/mubadala.png" alt="Mubadala Energy"><img src="assets/logos/proton.png" alt="Proton"><img src="assets/logos/kkmm.png" alt="KKMM"><img src="assets/logos/demant.png" alt="Demant"><img src="assets/logos/bsv.png" alt="BSV"><img src="assets/logos/menarini.png" alt="Menarini"><img src="assets/logos/jump.png" alt="Jump Retail"><img src="assets/logos/cid.png" alt="CID Realtors"><img src="assets/logos/kim.png" alt="KIM Realty"><img src="assets/logos/kbs.png" alt="KBS"><img src="assets/logos/ouji.png" alt="OUJI"><img src="assets/logos/exxonmobil.png" alt="" aria-hidden="true"><img src="assets/logos/novartis.png" alt="" aria-hidden="true"><img src="assets/logos/greateastern.png" alt="" aria-hidden="true"><img src="assets/logos/rhb.png" alt="" aria-hidden="true"><img src="assets/logos/kwsp.png" alt="" aria-hidden="true"><img src="assets/logos/tesla.png" alt="" aria-hidden="true"><img src="assets/logos/intel.png" alt="" aria-hidden="true"><img src="assets/logos/electrolux.png" alt="" aria-hidden="true"><img src="assets/logos/tnb.png" alt="" aria-hidden="true"><img src="assets/logos/drbhicom.png" alt="" aria-hidden="true"><img src="assets/logos/uobkayhian.png" alt="" aria-hidden="true"><img src="assets/logos/aon.png" alt="" aria-hidden="true"><img src="assets/logos/haier.png" alt="" aria-hidden="true"><img src="assets/logos/sunway.png" alt="" aria-hidden="true"><img src="assets/logos/nuskin.png" alt="" aria-hidden="true"><img src="assets/logos/mubadala.png" alt="" aria-hidden="true"><img src="assets/logos/proton.png" alt="" aria-hidden="true"><img src="assets/logos/kkmm.png" alt="" aria-hidden="true"><img src="assets/logos/demant.png" alt="" aria-hidden="true"><img src="assets/logos/bsv.png" alt="" aria-hidden="true"><img src="assets/logos/menarini.png" alt="" aria-hidden="true"><img src="assets/logos/jump.png" alt="" aria-hidden="true"><img src="assets/logos/cid.png" alt="" aria-hidden="true"><img src="assets/logos/kim.png" alt="" aria-hidden="true"><img src="assets/logos/kbs.png" alt="" aria-hidden="true"><img src="assets/logos/ouji.png" alt="" aria-hidden="true"></div></div>
+</section>
+
+<section class="sec about" id="about">
+  <div class="wrap about-grid">
+    <div>
+      <span class="eyebrow"><span class="en">About the programme</span><span class="zh">课程简介</span></span>
+      <h2 style="margin-top:14px"><span class="en">From understanding AI to building with it</span><span class="zh">从“看懂AI”到“用AI做出成果”</span></h2>
+      <p class="about-p"><span class="en"><b>Copilot AI Agents &amp; Vibe Coding Mastery</b> is a two-day journey. <b>Day 1</b> builds clear understanding — how AI works, where it fits, how to prompt it well and how AI agents move work from single questions to complete workflows. <b>Day 2</b> turns that understanding into working solutions: participants design and build AI assistants, dashboards and simple apps for their own processes.</span><span class="zh"><b>Copilot AI 智能体与 Vibe Coding 实战大师班</b>是一段两天的旅程。<b>第一天</b>建立清晰认知——AI如何运作、适合用在哪里、如何下好指令，以及AI智能体如何把“单一提问”升级为“完整工作流程”。<b>第二天</b>把认知变成成果：学员为自己的业务流程设计并打造AI助手、数据仪表板与简易应用。</span></p>
+      <p class="about-p"><span class="en">Everything is done with <b>Microsoft 365 Copilot Chat</b> — included with Microsoft 365 business plans and protected by enterprise data protection — so your teams can start using it the next working day, without waiting for budget approval on premium licences.</span><span class="zh">全部操作均使用 <b>Microsoft 365 Copilot Chat</b>——已包含在 Microsoft 365 商业方案中，并享有企业级数据保护——团队第二天上班就能用，无需等待高价授权的预算审批。</span></p>
+    </div>
+    <div class="facts">
+      <div class="fact"><b>2</b><span><span class="en">days, 9:00 am – 5:00 pm</span><span class="zh">天，上午9点至下午5点</span></span></div>
+      <div class="fact"><b>8</b><span><span class="en">modules + build showcase</span><span class="zh">个章节 + 成果展示</span></span></div>
+      <div class="fact"><b>3</b><span><span class="en">builds: agent, dashboard, app</span><span class="zh">项实作：助手、仪表板、应用</span></span></div>
+      <div class="fact"><b>HRD<small>Corp</small></b><span><span class="en">claimable</span><span class="zh">可申请津贴</span></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="outcomes">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="en">What your team will build</span><span class="zh">团队将亲手打造</span></span>
+      <h2 style="margin-top:14px"><span class="en">Three working solutions, built in class</span><span class="zh">三项可用方案，课堂上完成</span></h2>
+      <p><span class="en">Not demos to watch — solutions participants design, build, test and take back to their desks.</span><span class="zh">不是看老师示范，而是学员亲手设计、打造、测试，并带回工作岗位继续使用的方案。</span></p>
+    </div>
+    <div class="builds">
+      <article class="build">
+        <div class="vis" aria-hidden="true"><svg viewBox="0 0 300 120"><rect x="20" y="18" width="260" height="88" rx="10" fill="#fff" stroke="#dfe6e2"/><circle cx="46" cy="44" r="13" fill="#0f4a33"/><circle cx="42" cy="42" r="2" fill="#fff"/><circle cx="50" cy="42" r="2" fill="#fff"/><rect x="68" y="34" width="150" height="20" rx="10" fill="#e9f3ee"/><rect x="110" y="64" width="150" height="20" rx="10" fill="#e8792f"/><rect x="68" y="90" width="90" height="8" rx="4" fill="#e9f3ee"/></svg></div>
+        <span class="k"><span class="en">Build 1 · Copilot Agent</span><span class="zh">实作一 · Copilot 智能体</span></span>
+        <h3><span class="en">Your own AI assistant</span><span class="zh">专属AI助手</span></h3>
+        <p><span class="en">Design a Copilot agent for a real job — an SOP Q&amp;A helper, policy advisor, HR FAQ bot or customer-reply assistant — with clear instructions, guardrails and starter prompts your team can use.</span><span class="zh">为真实工作设计 Copilot 智能体——SOP 问答助手、政策顾问、HR FAQ 机器人或客户回复助理——配备清晰指令、防护规则与常用开场问题，让团队直接使用。</span></p>
+        <ul><li><span class="en">Agent Builder</span><span class="zh">Agent Builder</span></li><li><span class="en">Instructions &amp; guardrails</span><span class="zh">指令与防护规则</span></li><li><span class="en">Share with team</span><span class="zh">团队共享</span></li></ul>
+      </article>
+      <article class="build">
+        <div class="vis" aria-hidden="true"><svg viewBox="0 0 300 120"><rect x="20" y="14" width="260" height="96" rx="10" fill="#fff" stroke="#dfe6e2"/><rect x="34" y="26" width="60" height="22" rx="6" fill="#e9f3ee"/><rect x="100" y="26" width="60" height="22" rx="6" fill="#fdf0e6"/><rect x="166" y="26" width="60" height="22" rx="6" fill="#e9f3ee"/><g fill="#0f4a33"><rect x="40" y="80" width="14" height="20" rx="2"/><rect x="60" y="68" width="14" height="32" rx="2"/><rect x="80" y="74" width="14" height="26" rx="2"/></g><rect x="100" y="60" width="14" height="40" rx="2" fill="#e8792f"/><polyline points="140,94 168,78 196,84 224,62 262,58" fill="none" stroke="#e8792f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="262" cy="58" r="4" fill="#0f4a33"/></svg></div>
+        <span class="k"><span class="en">Build 2 · Data Dashboard</span><span class="zh">实作二 · 数据仪表板</span></span>
+        <h3><span class="en">An interactive dashboard</span><span class="zh">互动数据仪表板</span></h3>
+        <p><span class="en">Turn an Excel export into insight. Copilot analyses the data and charts it, then participants vibe-code an interactive dashboard with filters and KPIs that opens in any browser.</span><span class="zh">把 Excel 导出的数据变成洞察。Copilot 先分析数据、生成图表，学员再用 vibe coding 打造带筛选与 KPI 的互动仪表板，任何浏览器都能打开。</span></p>
+        <ul><li><span class="en">Excel → insight</span><span class="zh">Excel → 洞察</span></li><li><span class="en">KPIs &amp; filters</span><span class="zh">KPI 与筛选</span></li><li><span class="en">No BI licence</span><span class="zh">无需 BI 授权</span></li></ul>
+      </article>
+      <article class="build">
+        <div class="vis" aria-hidden="true"><svg viewBox="0 0 300 120"><rect x="20" y="14" width="260" height="96" rx="10" fill="#fff" stroke="#dfe6e2"/><rect x="20" y="14" width="260" height="20" rx="10" fill="#0f4a33"/><rect x="20" y="26" width="260" height="8" fill="#0f4a33"/><rect x="36" y="46" width="110" height="12" rx="4" fill="#e9f3ee"/><rect x="36" y="64" width="110" height="12" rx="4" fill="#e9f3ee"/><rect x="36" y="84" width="70" height="16" rx="8" fill="#e8792f"/><g fill="none" stroke="#0f4a33" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="168" y="46" width="12" height="12" rx="3"/><path d="m171 52 2 2 4-4"/><rect x="168" y="66" width="12" height="12" rx="3"/><path d="m171 72 2 2 4-4"/><rect x="168" y="86" width="12" height="12" rx="3"/></g><rect x="188" y="49" width="70" height="6" rx="3" fill="#dfe6e2"/><rect x="188" y="69" width="56" height="6" rx="3" fill="#dfe6e2"/><rect x="188" y="89" width="64" height="6" rx="3" fill="#dfe6e2"/></svg></div>
+        <span class="k"><span class="en">Build 3 · Vibe-Coded App</span><span class="zh">实作三 · Vibe Coding 应用</span></span>
+        <h3><span class="en">A functional business app</span><span class="zh">可运作的业务应用</span></h3>
+        <p><span class="en">Describe the tool in plain language and let Copilot write the code: a request triage tool, compliance checklist, quotation calculator or tracker — tested and refined until it works.</span><span class="zh">用日常语言描述需求，由 Copilot 写代码：请求分流工具、合规检查清单、报价计算器或进度追踪器——反复测试优化，直到真正可用。</span></p>
+        <ul><li><span class="en">Describe → build → test</span><span class="zh">描述 → 生成 → 测试</span></li><li><span class="en">Zero coding</span><span class="zh">零代码基础</span></li><li><span class="en">Runs in a browser</span><span class="zh">浏览器即可运行</span></li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec licence" id="licence">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="en">Use what you already pay for</span><span class="zh">善用已经拥有的工具</span></span>
+      <h2 style="margin-top:14px"><span class="en">Unlock Copilot before you buy more Copilot</span><span class="zh">先把 Copilot 用透，再考虑加购</span></h2>
+      <p><span class="en">Many organisations assume real AI value starts only with a premium add-on licence. It doesn't. This programme shows what your teams can already achieve with the Microsoft 365 business plan you have today.</span><span class="zh">许多企业以为，真正的AI价值要等购买高价附加授权后才开始。其实不然。本课程让您看到，团队用现有的 Microsoft 365 商业方案就能做到什么。</span></p>
+    </div>
+    <div class="lic-grid">
+      <div class="lic-card">
+        <h3><span class="en">Included — and used throughout the course</span><span class="zh">已包含，并贯穿整个课程</span></h3>
+        <ul class="inc">
+          <li><svg><use href="#i-check"/></svg><div><b><span class="en">Microsoft 365 Copilot Chat</span><span class="zh">Microsoft 365 Copilot Chat</span></b><span class="d"><span class="en">Secure AI chat for writing, analysis and research — in the browser, Edge, Teams and Outlook.</span><span class="zh">安全的AI对话，用于写作、分析与调研——可在浏览器、Edge、Teams 与 Outlook 中使用。</span></span></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b><span class="en">Enterprise data protection</span><span class="zh">企业级数据保护</span></b><span class="d"><span class="en">Signed in with a work account, prompts and responses stay protected and aren't used to train the models.</span><span class="zh">使用工作账号登录，指令与回复受保护，不会被用来训练模型。</span></span></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b><span class="en">Copilot agents with Agent Builder</span><span class="zh">用 Agent Builder 打造 Copilot 智能体</span></b><span class="d"><span class="en">Create and share role-specific assistants with your own instructions and knowledge.</span><span class="zh">用自定义指令与知识，打造并共享岗位专属助手。</span></span></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b><span class="en">File upload, analysis &amp; charts</span><span class="zh">文件上传、分析与图表</span></b><span class="d"><span class="en">Summarise documents, analyse spreadsheets and generate charts inside the chat.</span><span class="zh">在对话中摘要文件、分析表格并生成图表。</span></span></div></li>
+          <li><svg><use href="#i-check"/></svg><div><b><span class="en">Code generation for vibe coding</span><span class="zh">支持 vibe coding 的代码生成</span></b><span class="d"><span class="en">Copilot writes complete dashboards and mini apps that run in any browser — no IDE, no developer.</span><span class="zh">Copilot 直接写出可在任何浏览器运行的仪表板与小应用——无需开发工具、无需工程师。</span></span></div></li>
+        </ul>
+        <div class="honest"><svg><use href="#i-info"/></svg><span><span class="en">We keep every exercise within what Copilot Chat includes, and show exactly where premium or pay-as-you-go features begin — such as agents that search your company's SharePoint data — so you decide on upgrades with clear facts.</span><span class="zh">所有练习都控制在 Copilot Chat 已包含的功能范围内，并清楚说明哪些属于高级或按量计费功能（例如检索公司 SharePoint 数据的智能体），让您根据事实决定是否升级。</span></span></div>
+      </div>
+      <div class="lic-card calc" id="calc">
+        <h3><span class="en">What could your team save?</span><span class="zh">您的团队能省下多少？</span></h3>
+        <label for="calcN"><span class="row"><span><span class="en">Employees</span><span class="zh">员工人数</span></span><output id="calcNOut">50</output></span></label>
+        <input id="calcN" type="range" min="5" max="500" step="5" value="50">
+        <label for="calcP"><span class="en">Premium add-on price per user / month</span><span class="zh">每位用户每月高级附加授权价格</span></label>
+        <div class="price"><span>USD</span><input id="calcP" type="number" min="0" step="1" value="30" inputmode="decimal"></div>
+        <div class="save" aria-live="polite">
+          <small><span class="en">Add-on licence cost avoided per year</span><span class="zh">每年可省下的附加授权费用</span></small>
+          <b id="calcOut">USD 18,000</b>
+          <span class="en">while your team builds agents, dashboards and apps with Copilot Chat.</span><span class="zh">同时团队用 Copilot Chat 打造智能体、仪表板与应用。</span>
+        </div>
+        <p class="note"><span class="en">Illustrative only. USD 30 reflects the published list price of the Microsoft 365 Copilot add-on at the time of writing; your actual price depends on your plan and reseller. Adjust it to match your quote.</span><span class="zh">仅供参考。USD 30 为撰写时 Microsoft 365 Copilot 附加授权的公开标价；实际价格视您的方案与经销商而定，可自行调整。</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec explorer" id="programme">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="en">Explore the programme</span><span class="zh">课程内容</span></span>
+      <h2 style="margin-top:14px"><span class="en">Day 1 to understand. Day 2 to build.</span><span class="zh">第一天看懂，第二天动手做</span></h2>
+      <p><span class="en">Pick your role and industry to see which modules matter most and how teams like yours apply them. Open any module for the details.</span><span class="zh">选择您的岗位与行业，看看哪些章节最相关、同行如何应用；点击任一章节查看详细内容。</span></p>
+    </div>
+
+    <div class="rolefinder">
+      <p class="rf-q"><span class="en">I work in…</span><span class="zh">我的岗位是…</span></p>
+      <div class="roles" role="group" aria-label="Role">
+        <button type="button" class="role" data-role="fin" aria-pressed="false"><span class="en">Finance &amp; Accounts</span><span class="zh">财务与会计</span></button>
+        <button type="button" class="role" data-role="hr" aria-pressed="false"><span class="en">HR &amp; L&amp;D</span><span class="zh">人力资源与培训</span></button>
+        <button type="button" class="role" data-role="ops" aria-pressed="false"><span class="en">Operations &amp; Admin</span><span class="zh">营运与行政</span></button>
+        <button type="button" class="role" data-role="proc" aria-pressed="false"><span class="en">Procurement &amp; Supply Chain</span><span class="zh">采购与供应链</span></button>
+        <button type="button" class="role" data-role="sales" aria-pressed="false"><span class="en">Sales &amp; Customer Service</span><span class="zh">销售与客户服务</span></button>
+        <button type="button" class="role" data-role="mgr" aria-pressed="false"><span class="en">Managers &amp; Leaders</span><span class="zh">经理与管理层</span></button>
+      </div>
+      <p class="rf-q rf-q2"><span class="en">My industry is…</span><span class="zh">我的行业是…</span></p>
+      <div class="roles" role="group" aria-label="Industry">
+        <button type="button" class="ind" data-ind="gbs" aria-pressed="false"><span class="en">Shared Services &amp; GBS</span><span class="zh">共享服务与 GBS</span></button>
+        <button type="button" class="ind" data-ind="bank" aria-pressed="false"><span class="en">Banking &amp; Insurance</span><span class="zh">银行与保险</span></button>
+        <button type="button" class="ind" data-ind="mfg" aria-pressed="false"><span class="en">Manufacturing</span><span class="zh">制造业</span></button>
+        <button type="button" class="ind" data-ind="retail" aria-pressed="false"><span class="en">Retail &amp; FMCG</span><span class="zh">零售与快消</span></button>
+        <button type="button" class="ind" data-ind="energy" aria-pressed="false"><span class="en">Oil, Gas &amp; Energy</span><span class="zh">石油、天然气与能源</span></button>
+        <button type="button" class="ind" data-ind="prop" aria-pressed="false"><span class="en">Property &amp; Construction</span><span class="zh">房地产与建筑</span></button>
+        <button type="button" class="ind" data-ind="health" aria-pressed="false"><span class="en">Healthcare &amp; Pharma</span><span class="zh">医疗与制药</span></button>
+        <button type="button" class="ind" data-ind="edu" aria-pressed="false"><span class="en">Education</span><span class="zh">教育</span></button>
+        <button type="button" class="ind" data-ind="gov" aria-pressed="false"><span class="en">Government &amp; GLC</span><span class="zh">政府与官联</span></button>
+        <button type="button" class="ind" data-ind="sme" aria-pressed="false"><span class="en">SMEs</span><span class="zh">中小企业</span></button>
+      </div>
+      <div class="rf-out" id="rfOut" hidden>
+        <div id="rfRole" hidden>
+          <p class="rf-h"><span class="en">For your role, after the programme you could:</span><span class="zh">针对您的岗位，课程结束后您可以：</span></p>
+          <ul id="rfWins"></ul>
+        </div>
+        <div id="rfInd" hidden>
+          <p class="rf-h"><span class="en">In your industry, teams use these skills for:</span><span class="zh">在您的行业，团队会把这些技能用于：</span></p>
+          <ul id="rfIndWins"></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Programme days">
+      <button type="button" role="tab" id="tab-d1" aria-controls="pane-d1" aria-selected="true"><b><span class="en">Day 1</span><span class="zh">第一天</span></b><span><span class="en">AI Concepts &amp; Agentic Workflows</span><span class="zh">AI概念与智能体工作流程</span></span><i class="cnt" data-cnt="d1"></i></button>
+      <button type="button" role="tab" id="tab-d2" aria-controls="pane-d2" aria-selected="false"><b><span class="en">Day 2</span><span class="zh">第二天</span></b><span><span class="en">Practical AI Design &amp; Build</span><span class="zh">AI实战设计与打造</span></span><i class="cnt" data-cnt="d2"></i></button>
+    </div>
+    <div class="pane" id="pane-d1" role="tabpanel" aria-labelledby="tab-d1">
+          <details class="mod" data-mod="m1" open>
+            <summary><span class="mn">M1</span><span class="mt"><small>9:00 – 10:30</small><strong><span class="en">AI Fundamentals &amp; the Next 5–10 Years of Work</span><span class="zh">AI基础与未来5–10年的工作</span></strong></span><span class="rel"><span class="en">For your role</span><span class="zh">适合您的岗位</span></span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb">
+              <ul><li><span class="en">How AI evolved, and the trends shaping the workplace now</span><span class="zh">AI的发展历程与正在改变职场的趋势</span></li><li><span class="en">Impact on jobs, roles, decision-making and skills</span><span class="zh">对工作、岗位、决策与技能的影响</span></li><li><span class="en">Types of AI and how they apply to business</span><span class="zh">AI的类型及其商业应用</span></li><li><span class="en">Myths vs. realities of AI at work</span><span class="zh">职场AI的迷思与现实</span></li><li><span class="en">A tour of Copilot Chat: what's already in your Microsoft 365 plan</span><span class="zh">Copilot Chat 导览：您的 Microsoft 365 方案已包含哪些功能</span></li></ul>
+              <p class="ex"><b><span class="en">Hands-on:</span><span class="zh">实操：</span></b> <span class="en">sign in with your work account and complete five quick Copilot Chat wins on real tasks.</span><span class="zh">用工作账号登录，在真实任务上完成五个 Copilot Chat 快速小成果。</span></p>
+            </div>
+          </details>
+          <details class="mod" data-mod="m2">
+            <summary><span class="mn">M2</span><span class="mt"><small>10:45 – 12:15</small><strong><span class="en">How AI Assistants Think — and Where They Fit</span><span class="zh">AI助手如何“思考”，又适合用在哪里</span></strong></span><span class="rel"><span class="en">For your role</span><span class="zh">适合您的岗位</span></span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb">
+              <ul><li><span class="en">What generative AI is, in plain business language</span><span class="zh">用商业语言讲清楚什么是生成式AI</span></li><li><span class="en">How it handles text, reasoning and data</span><span class="zh">它如何处理文字、推理与数据</span></li><li><span class="en">Strengths, limitations and when <b>not</b> to use AI</span><span class="zh">优势、局限，以及<b>不该</b>使用AI的情况</span></li><li><span class="en">Realistic applications across finance, procurement, HR, operations and customer service</span><span class="zh">在财务、采购、人力资源、营运与客户服务中的实际应用</span></li></ul>
+              <p class="ex"><b><span class="en">Hands-on:</span><span class="zh">实操：</span></b> <span class="en">map your own weekly tasks into "AI can do", "AI can help" and "keep human".</span><span class="zh">把自己每周的工作分成“AI能做”“AI能帮”“保留人工”三类。</span></p>
+            </div>
+          </details>
+          <details class="mod" data-mod="m3">
+            <summary><span class="mn">M3</span><span class="mt"><small>1:45 – 3:15</small><strong><span class="en">Practical Prompting with Copilot Chat</span><span class="zh">Copilot Chat 实用指令技巧</span></strong></span><span class="rel"><span class="en">For your role</span><span class="zh">适合您的岗位</span></span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb">
+              <ul><li><span class="en">The CoSTAR framework for quality, consistent output</span><span class="zh">用 CoSTAR 框架产出高质量、稳定的成果</span></li><li><span class="en">Role prompts, step-by-step reasoning and refinement loops</span><span class="zh">角色指令、分步推理与迭代优化</span></li><li><span class="en">Analysis, summarisation, quality checks and content creation</span><span class="zh">分析、摘要、质量检查与内容创作</span></li><li><span class="en">Safety, guardrails and responsible use of company data</span><span class="zh">安全、防护规则与负责任地使用公司数据</span></li></ul>
+              <p class="ex"><b><span class="en">Hands-on:</span><span class="zh">实操：</span></b> <span class="en">build a personal prompt playbook for emails, reports and data checks.</span><span class="zh">建立个人指令手册，涵盖电邮、报告与数据检查。</span></p>
+            </div>
+          </details>
+          <details class="mod" data-mod="m4">
+            <summary><span class="mn">M4</span><span class="mt"><small>3:30 – 5:00</small><strong><span class="en">Agentic AI: From Questions to Workflows</span><span class="zh">智能体AI：从提问到完整工作流程</span></strong></span><span class="rel"><span class="en">For your role</span><span class="zh">适合您的岗位</span></span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb">
+              <ul><li><span class="en">What AI agents are and how they differ from linear automation</span><span class="zh">AI智能体是什么，与传统线性自动化有何不同</span></li><li><span class="en">How agents plan, use knowledge and take the next step</span><span class="zh">智能体如何规划、运用知识并执行下一步</span></li><li><span class="en">Agentic AI already in production across industries</span><span class="zh">各行业已在使用的智能体AI案例</span></li><li><span class="en">Use cases: invoice queries, reporting, request resolution, compliance checks</span><span class="zh">应用场景：发票查询、报表、请求处理、合规检查</span></li><li><span class="en">What AI can do today vs. what is emerging next</span><span class="zh">AI现在能做什么，接下来又会出现什么</span></li></ul>
+              <p class="ex"><b><span class="en">Hands-on:</span><span class="zh">实操：</span></b> <span class="en">build your first Copilot agent and test it on a real workflow.</span><span class="zh">打造第一个 Copilot 智能体，并在真实流程上测试。</span></p>
+            </div>
+          </details>
+    </div>
+    <div class="pane" id="pane-d2" role="tabpanel" aria-labelledby="tab-d2" hidden>
+          <details class="mod" data-mod="m5" open>
+            <summary><span class="mn">M5</span><span class="mt"><small>9:00 – 10:30</small><strong><span class="en">AI Adoption Strategy: Choosing What to Build</span><span class="zh">AI落地策略：选对要做的事</span></strong></span><span class="rel"><span class="en">For your role</span><span class="zh">适合您的岗位</span></span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb">
+              <ul><li><span class="en">Selecting the right processes for AI</span><span class="zh">挑选适合导入AI的流程</span></li><li><span class="en">Manual, semi-automated and fully automated — which fits where</span><span class="zh">人工、半自动与全自动——各自适合哪里</span></li><li><span class="en">Governance, risk and feasibility checks</span><span class="zh">治理、风险与可行性评估</span></li><li><span class="en">Process redesign thinking: fix the process, then add AI</span><span class="zh">流程再设计思维：先理顺流程，再加入AI</span></li></ul>
+              <p class="ex"><b><span class="en">Hands-on:</span><span class="zh">实操：</span></b> <span class="en">score and shortlist the use cases your team will build today.</span><span class="zh">评分并选出团队今天要动手打造的应用场景。</span></p>
+            </div>
+          </details>
+          <details class="mod" data-mod="m6">
+            <summary><span class="mn">M6</span><span class="mt"><small>10:45 – 12:15</small><strong><span class="en">Build Session: AI Assistants with Copilot Agents</span><span class="zh">实作：用 Copilot 智能体打造AI助手</span></strong></span><span class="rel"><span class="en">For your role</span><span class="zh">适合您的岗位</span></span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb">
+              <ul><li><span class="en">Knowledge assistants: SOP Q&amp;A, policy advisor, HR FAQ, customer replies</span><span class="zh">知识型助手：SOP 问答、政策顾问、HR FAQ、客户回复</span></li><li><span class="en">Structuring instructions, knowledge and guardrails</span><span class="zh">设计指令、知识来源与防护规则</span></li><li><span class="en">Starter prompts, tone and escalation rules</span><span class="zh">开场问题、语气与升级处理规则</span></li><li><span class="en">Sharing with your team and rolling it out safely</span><span class="zh">与团队共享并安全推行</span></li></ul>
+              <p class="ex"><b><span class="en">Hands-on:</span><span class="zh">实操：</span></b> <span class="en">build, test and refine a Copilot agent for your own role.</span><span class="zh">为自己的岗位打造、测试并优化 Copilot 智能体。</span></p>
+            </div>
+          </details>
+          <details class="mod" data-mod="m7">
+            <summary><span class="mn">M7</span><span class="mt"><small>1:15 – 2:45</small><strong><span class="en">Build Session: Data Dashboards &amp; Interactive Outputs</span><span class="zh">实作：数据仪表板与互动成果</span></strong></span><span class="rel"><span class="en">For your role</span><span class="zh">适合您的岗位</span></span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb">
+              <ul><li><span class="en">Analyse Excel data with Copilot: trends, outliers and summaries</span><span class="zh">用 Copilot 分析 Excel 数据：趋势、异常与摘要</span></li><li><span class="en">Vibe-code an interactive dashboard with KPIs and filters</span><span class="zh">用 vibe coding 打造带 KPI 与筛选的互动仪表板</span></li><li><span class="en">Decision trees, process visuals and analysis summaries</span><span class="zh">决策树、流程图与分析摘要</span></li><li><span class="en">Prompting for structured, reusable outputs</span><span class="zh">编写能产出结构化、可重复使用成果的指令</span></li></ul>
+              <p class="ex"><b><span class="en">Hands-on:</span><span class="zh">实操：</span></b> <span class="en">turn a raw data export into a dashboard your manager can open in a browser.</span><span class="zh">把原始导出数据变成主管用浏览器就能打开的仪表板。</span></p>
+            </div>
+          </details>
+          <details class="mod" data-mod="m8">
+            <summary><span class="mn">M8</span><span class="mt"><small>3:00 – 4:30</small><strong><span class="en">Build Session: Functional Apps &amp; Documents with Vibe Coding</span><span class="zh">实作：用 Vibe Coding 打造应用与文件</span></strong></span><span class="rel"><span class="en">For your role</span><span class="zh">适合您的岗位</span></span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb">
+              <ul><li><span class="en">Vibe coding: describe → generate → test → refine</span><span class="zh">Vibe coding：描述 → 生成 → 测试 → 优化</span></li><li><span class="en">Build a simple internal app: triage tool, checklist, calculator or tracker</span><span class="zh">打造简易内部应用：分流工具、检查清单、计算器或追踪器</span></li><li><span class="en">AI-assisted SOP drafts, training decks and business cases</span><span class="zh">用AI起草 SOP、培训简报与商业提案</span></li></ul>
+              <p class="ex"><b><span class="en">Hands-on:</span><span class="zh">实操：</span></b> <span class="en">ship a working app that solves a real problem in your process.</span><span class="zh">完成一个能解决流程中真实问题的可用应用。</span></p>
+            </div>
+          </details>
+          <details class="mod" data-mod="fp">
+            <summary><span class="mn">★</span><span class="mt"><small>4:30 – 5:00</small><strong><span class="en">Build Showcase &amp; Team Adoption Plan</span><span class="zh">成果展示与团队落地计划</span></strong></span><span class="rel"><span class="en">For your role</span><span class="zh">适合您的岗位</span></span><span class="chev" aria-hidden="true"></span></summary>
+            <div class="mb">
+              <ul><li><span class="en">Teams demo their agent, dashboard and app</span><span class="zh">各组展示智能体、仪表板与应用</span></li><li><span class="en">Agree owners, guardrails and a 30-60-90 day rollout plan</span><span class="zh">确定负责人、防护规则与 30-60-90 天推行计划</span></li></ul>
+              <p class="ex"><b><span class="en">Outcome:</span><span class="zh">成果：</span></b> <span class="en">your team leaves with solutions already working — and a plan to scale them.</span><span class="zh">团队带着已经可用的方案离开，并有扩大推行的计划。</span></p>
+            </div>
+          </details>
+    </div>
+  </div>
+</section>
+
+<section class="sec deliver">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="en">Walk away with</span><span class="zh">带走的成果</span></span>
+      <h2 style="margin-top:14px"><span class="en">Real outputs, built during the training</span><span class="zh">在课堂上就完成的真实成果</span></h2>
+      <p><span class="en">Participants don't just learn about Copilot — they build things they keep using after the session ends.</span><span class="zh">学员不只是“认识” Copilot，而是亲手做出课程结束后仍能持续使用的成果。</span></p>
+    </div>
+    <ol class="dl">
+      <li><div><strong class="en">A Copilot agent for their role</strong><strong class="zh">岗位专属 Copilot 智能体</strong><span class="en">A working AI assistant with instructions and guardrails, ready to share.</span><span class="zh">带指令与防护规则、可直接共享的AI助手。</span></span></div></li>
+      <li><div><strong class="en">An interactive data dashboard</strong><strong class="zh">互动数据仪表板</strong><span class="en">Built from their own Excel data — no BI licence, no coding.</span><span class="zh">用自己的 Excel 数据打造——无需 BI 授权、无需写代码。</span></div></li>
+      <li><div><strong class="en">A functional mini app</strong><strong class="zh">可运作的小应用</strong><span class="en">A triage tool, checklist, calculator or tracker, vibe-coded with Copilot.</span><span class="zh">用 Copilot vibe coding 完成的分流工具、检查清单、计算器或追踪器。</span></div></li>
+      <li><div><strong class="en">A reusable Copilot prompt playbook</strong><strong class="zh">可重复使用的 Copilot 指令手册</strong><span class="en">CoSTAR prompts for emails, reports, analysis and quality checks.</span><span class="zh">涵盖电邮、报告、分析与质量检查的 CoSTAR 指令模板。</span></div></li>
+      <li><div><strong class="en">An AI process-selection map</strong><strong class="zh">AI流程选择地图</strong><span class="en">Their tasks sorted into manual, semi-automated and fully automated.</span><span class="zh">把工作分类为人工、半自动与全自动。</span></div></li>
+      <li><div><strong class="en">AI-drafted SOPs &amp; a training deck</strong><strong class="zh">AI起草的 SOP 与培训简报</strong><span class="en">Operational documents produced in a fraction of the usual time.</span><span class="zh">只需平时一小部分时间就能完成的营运文件。</span></div></li>
+      <li style="grid-column:1/-1"><div><strong class="en">A team Copilot adoption plan</strong><strong class="zh">团队 Copilot 落地计划</strong><span class="en">Shortlisted use cases, owners, guardrails and a 30-60-90 day rollout — so adoption continues long after the training, on the licence you already have.</span><span class="zh">选定的应用场景、负责人、防护规则与 30-60-90 天推行计划——让AI应用在培训后持续推进，而且用的就是现有授权。</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="en">Impact for your organisation</span><span class="zh">为企业带来的价值</span></span>
+      <h2 style="margin-top:14px"><span class="en">More value from Microsoft 365 — with people still in charge</span><span class="zh">让 Microsoft 365 发挥更大价值——由人主导，AI助力</span></h2>
+    </div>
+    <div class="impact">
+      <div class="imp"><h3><span class="en">Cost-smart AI</span><span class="zh">精明的AI投入</span></h3><p><span class="en">Real AI capability from tools already licensed — upgrade later only where it clearly pays.</span><span class="zh">用已授权的工具获得真正的AI能力——日后只在确实划算之处才升级。</span></p></div>
+      <div class="imp"><h3><span class="en">Speed</span><span class="zh">效率</span></h3><p><span class="en">Hours of queries, reporting and document work reduced to minutes.</span><span class="zh">数小时的查询、报表与文书工作，缩短到几分钟。</span></p></div>
+      <div class="imp"><h3><span class="en">Builders, not just users</span><span class="zh">从使用者变成打造者</span></h3><p><span class="en">Teams solve their own process problems without waiting for IT backlogs.</span><span class="zh">团队自己解决流程问题，无需排队等IT。</span></p></div>
+      <div class="imp"><h3><span class="en">Safe adoption</span><span class="zh">安全落地</span></h3><p><span class="en">Enterprise data protection, clear guardrails and a shared rollout plan.</span><span class="zh">企业级数据保护、清晰的防护规则与共同的推行计划。</span></p></div>
+    </div>
+    <div class="toolwall" aria-label="Tools covered">
+      <span>Microsoft 365 Copilot Chat</span><span>Copilot Agent Builder</span><span>Copilot in Edge</span><span>Copilot in Teams &amp; Outlook</span><span>Copilot Pages</span><span>Excel</span><span>Word</span><span>PowerPoint</span><span><span class="en">Vibe coding (HTML apps)</span><span class="zh">Vibe coding（HTML 应用）</span></span><span><span class="en">Browser dashboards</span><span class="zh">浏览器仪表板</span></span><span>CoSTAR</span>
+    </div>
+  </div>
+</section>
+
+<section class="sec how">
+  <div class="wrap how-grid">
+    <div>
+      <span class="eyebrow"><span class="en">How it's delivered</span><span class="zh">授课方式</span></span>
+      <h2 style="margin:14px 0 28px"><span class="en">Learn the concepts, then build on your own work</span><span class="zh">先懂原理，再用自己的工作动手做</span></h2>
+      <div class="steps">
+        <div class="step"><div class="n">1</div><div><h3><span class="en">Clear concepts, no jargon</span><span class="zh">概念清晰，不讲术语</span></h3><p><span class="en">How AI and agents work, explained with business examples from Malaysian workplaces.</span><span class="zh">用马来西亚职场的商业案例，讲清楚AI与智能体如何运作。</span></p></div></div>
+        <div class="step"><div class="n">2</div><div><h3><span class="en">Live demonstrations</span><span class="zh">现场示范</span></h3><p><span class="en">Every build shown step by step in Copilot Chat before participants try it.</span><span class="zh">每项实作都先在 Copilot Chat 中逐步示范，再让学员动手。</span></p></div></div>
+        <div class="step"><div class="n">3</div><div><h3><span class="en">Guided build sessions</span><span class="zh">引导式实作</span></h3><p><span class="en">Participants build an agent, a dashboard and an app on their own processes.</span><span class="zh">学员以自己的业务流程打造智能体、仪表板与应用。</span></p></div></div>
+        <div class="step"><div class="n">4</div><div><h3><span class="en">Showcase &amp; adoption plan</span><span class="zh">成果展示与落地计划</span></h3><p><span class="en">Teams demo their builds and agree how to roll them out.</span><span class="zh">各组展示成果，并商定如何推行。</span></p></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="mix">
+        <h3><span class="en">Training mix</span><span class="zh">课程比例</span></h3>
+        <div class="bar" aria-hidden="true"><i></i><i></i></div>
+        <div class="legend"><span><b>70%</b> <span class="en">hands-on build</span><span class="zh">实操打造</span></span><span><b>30%</b> <span class="en">concepts &amp; demos</span><span class="zh">概念与示范</span></span></div>
+        <div class="who">
+          <h3><span class="en">Ideal for</span><span class="zh">适合对象</span></h3>
+          <div class="chips">
+            <span class="en">Any company on Microsoft 365</span><span class="zh">所有使用 Microsoft 365 的企业</span>
+            <span class="en">Executives &amp; managers</span><span class="zh">高管与经理</span>
+            <span class="en">Finance, procurement &amp; HR</span><span class="zh">财务、采购与人力资源</span>
+            <span class="en">Operations &amp; shared services</span><span class="zh">营运与共享服务</span>
+            <span class="en">Sales &amp; customer service</span><span class="zh">销售与客户服务</span>
+            <span class="en">Process improvement &amp; digital teams</span><span class="zh">流程改善与数字化团队</span>
+            <span class="en">SME owners</span><span class="zh">中小企业主</span>
+          </div>
+        </div>
+        <p style="margin-top:22px;color:var(--muted);font-size:15px"><span class="en">Requirements: a laptop and a Microsoft 365 work account. No premium Copilot licence, no technical background. Delivered in English, Mandarin or both.</span><span class="zh">所需条件：一台笔记本电脑与 Microsoft 365 工作账号。无需高级 Copilot 授权，无需技术背景。可用英语、华语或双语授课。</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec trainer" id="trainer">
+  <div class="wrap trainer-grid">
+    <div class="t-photo">
+      <img class="main" src="assets/david-hooi-2.jpg" alt="David Hooi" width="700" height="836">
+      <div class="quote"><span class="en">“Transform workflows. Accelerate growth. Lead with AI.”</span><span class="zh">“改造工作流程，加速业务增长，以AI引领未来。”</span></div>
+    </div>
+    <div>
+      <span class="eyebrow"><span class="en">Your trainer</span><span class="zh">培训师</span></span>
+      <h2 style="margin-top:14px">David Hooi<small>BEng, MBA</small></h2>
+      <p class="t-role"><span class="en">AI Adoption Specialist · Corporate Trainer · Founder, D Action Consultancy</span><span class="zh">AI应用落地专家 · 企业培训师 · D Action Consultancy 创办人</span></p>
+      <p class="bio"><span class="en">David brings <b>over 20 years of commercial and leadership experience at GlaxoSmithKline (GSK)</b>, where he served as Sales Director and earned multiple Sales Excellence Awards. He knows what real business pressure looks like — and teaches AI as a tool to meet it.</span><span class="zh">David 拥有<b>超过20年在葛兰素史克（GSK）的商业与管理经验</b>，曾任销售总监，并多次荣获销售卓越奖。他深知企业面对的真实压力，并把AI作为解决这些压力的实用工具来教授。</span></p>
+      <p class="bio"><span class="en">As founder of D Action Consultancy &amp; Services, he specialises in <b>AI adoption and implementation</b> for corporations and SMEs. He has trained <b>6,000+ professionals across 100+ companies</b> — including major banks, insurers, government agencies, multinationals and global business services teams.</span><span class="zh">作为 D Action Consultancy &amp; Services 创办人，他专注于为大型企业与中小企业推动<b>AI应用与落地</b>。他已为<b>超过100家企业、6,000多名学员</b>授课，包括大型银行、保险公司、政府机构、跨国企业与全球商业服务团队。</span></p>
+      <div class="creds">
+        <div class="cred"><svg><use href="#i-check"/></svg><span class="en">HRD Corp Accredited Trainer</span><span class="zh">HRD Corp 认证培训师</span></div>
+        <div class="cred"><svg><use href="#i-check"/></svg><span class="en">Google AI Leader</span><span class="zh">Google AI Leader</span></div>
+        <div class="cred"><svg><use href="#i-check"/></svg><span class="en">Ex-Sales Director, GSK</span><span class="zh">前 GSK 销售总监</span></div>
+        <div class="cred"><svg><use href="#i-check"/></svg><span class="en">Bilingual: English &amp; Mandarin</span><span class="zh">中英双语授课</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="brands">
+  <div class="wrap">
+    <div class="box">
+      <h2><span class="en">Trusted by leading organisations</span><span class="zh">深受知名机构信赖</span></h2>
+      <p class="sub"><span class="en">Banks, insurers, multinationals, government agencies and growing SMEs.</span><span class="zh">银行、保险公司、跨国企业、政府机构与成长中的中小企业。</span></p>
+      <div class="logogrid"><div><img src="assets/logos/exxonmobil.png" alt="ExxonMobil"></div><div><img src="assets/logos/novartis.png" alt="Novartis"></div><div><img src="assets/logos/greateastern.png" alt="Great Eastern"></div><div><img src="assets/logos/rhb.png" alt="RHB"></div><div><img src="assets/logos/kwsp.png" alt="KWSP"></div><div><img src="assets/logos/tesla.png" alt="Tesla"></div><div><img src="assets/logos/intel.png" alt="Intel"></div><div><img src="assets/logos/electrolux.png" alt="Electrolux"></div><div><img src="assets/logos/tnb.png" alt="Tenaga Nasional"></div><div><img src="assets/logos/drbhicom.png" alt="DRB-HICOM"></div><div><img src="assets/logos/uobkayhian.png" alt="UOB Kay Hian"></div><div><img src="assets/logos/aon.png" alt="AON"></div><div><img src="assets/logos/haier.png" alt="Haier"></div><div><img src="assets/logos/sunway.png" alt="Sunway Medical Centre"></div><div><img src="assets/logos/nuskin.png" alt="Nu Skin"></div><div><img src="assets/logos/mubadala.png" alt="Mubadala Energy"></div><div><img src="assets/logos/proton.png" alt="Proton"></div><div><img src="assets/logos/kkmm.png" alt="KKMM"></div><div><img src="assets/logos/demant.png" alt="Demant"></div><div><img src="assets/logos/bsv.png" alt="BSV"></div><div><img src="assets/logos/menarini.png" alt="Menarini"></div><div><img src="assets/logos/jump.png" alt="Jump Retail"></div><div><img src="assets/logos/cid.png" alt="CID Realtors"></div><div><img src="assets/logos/kim.png" alt="KIM Realty"></div><div><img src="assets/logos/kbs.png" alt="KBS"></div><div><img src="assets/logos/ouji.png" alt="OUJI"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec cta" id="contact">
+  <div class="wrap">
+    <h2><span class="en">Unlock the Copilot your team already has</span><span class="zh">把团队已有的 Copilot 真正用起来</span></h2>
+    <p><span class="en">Run it in-house for your organisation. Tell us about your team and processes — we'll tailor the agents, dashboards and apps to your industry. HRD Corp claimable.</span><span class="zh">为您的机构举办企业内训。告诉我们您的团队与流程，我们会根据您的行业量身调整智能体、仪表板与应用的实作内容。可申请 HRD Corp 津贴。</span></p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="https://wa.me/60184043913" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg><span class="en">WhatsApp +60 18-404 3913</span><span class="zh">WhatsApp +60 18-404 3913</span></a>
+      <a class="btn btn-ghost" href="mailto:david@daction.com"><svg><use href="#i-mail"/></svg>david@daction.com</a>
+    </div>
+    <div class="contact">
+      <a href="https://www.davidhooi.com" target="_blank" rel="noopener"><svg><use href="#i-web"/></svg>www.davidhooi.com</a>
+    </div>
+    <p style="margin-top:28px;font-size:13px;color:rgba(255,255,255,.55)"><span class="en">Microsoft, Microsoft 365 and Copilot are trademarks of Microsoft Corporation. This independent programme is not affiliated with or endorsed by Microsoft.</span><span class="zh">Microsoft、Microsoft 365 与 Copilot 为 Microsoft Corporation 的商标。本课程为独立培训课程，与 Microsoft 无隶属或背书关系。</span></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap"><span class="flogo"><img src="assets/dac-logo.png" alt="DAC — Firing Up Growth"></span><span>© 2026 D Action Consultancy &amp; Services Sdn Bhd (202501060150)</span></div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/60184043913" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#i-wa"/></svg></a>
+
+<script>document.documentElement.classList.add("js");</script>
+<script>
+(function(){
+  var titles={en:"Copilot AI Agents & Vibe Coding Mastery | David Hooi",zh:"Copilot AI 智能体与 Vibe Coding 实战大师班 | David Hooi"};
+  function setLang(l){
+    if(l!=="zh")l="en";
+    var h=document.documentElement;
+    h.setAttribute("data-lang",l);
+    h.setAttribute("lang",l==="zh"?"zh-Hans":"en");
+    document.title=titles[l];
+    document.querySelectorAll("[data-set-lang]").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.setLang===l)});
+    try{localStorage.setItem("lang",l)}catch(e){}
+  }
+  var q=new URLSearchParams(location.search).get("lang"),saved=null;
+  try{saved=localStorage.getItem("lang")}catch(e){}
+  var nav=(navigator.language||"").toLowerCase().indexOf("zh")===0?"zh":"en";
+  setLang(q||saved||nav);
+
+  /* licence savings calculator */
+  var cn=document.getElementById('calcN'),cp=document.getElementById('calcP'),co=document.getElementById('calcOut'),cno=document.getElementById('calcNOut');
+  function calc(){var n=+cn.value||0,p=Math.max(0,+cp.value||0);cno.textContent=n;co.textContent='USD '+Math.round(n*p*12).toLocaleString('en-US')}
+  cn.addEventListener('input',calc);cp.addEventListener('input',calc);calc();
+
+  /* programme tabs */
+  var tabs=document.querySelectorAll('.tabs [role=tab]');
+  function showTab(t){tabs.forEach(function(b){var on=b===t;b.setAttribute('aria-selected',on);document.getElementById(b.getAttribute('aria-controls')).hidden=!on})}
+  tabs.forEach(function(b){b.addEventListener('click',function(){showTab(b)})});
+  /* role finder */
+  var R={
+    "fin":{"mods":["m3","m4","m7","m8"],"wins":[["A Copilot agent that answers invoice and payment queries","解答发票与付款查询的 Copilot 智能体"],["A month-end variance dashboard from your Excel export","用 Excel 导出数据做月结差异仪表板"],["A reconciliation checklist app","对账检查清单应用"]]},
+    "hr":{"mods":["m3","m6","m8","fp"],"wins":[["An HR policy FAQ agent for employees","解答员工问题的 HR 政策 FAQ 智能体"],["Onboarding checklists and training decks, fast","快速完成入职清单与培训简报"],["A headcount and attrition dashboard","人数与流失率仪表板"]]},
+    "ops":{"mods":["m4","m5","m6","m8"],"wins":[["An SOP Q&A assistant for the team","团队专用 SOP 问答助手"],["A request triage tool that routes work","自动分流工作请求的工具"],["A service-level dashboard for daily stand-ups","每日例会用的服务水平仪表板"]]},
+    "proc":{"mods":["m2","m5","m7","m8"],"wins":[["A supplier comparison dashboard","供应商比较仪表板"],["A purchase-request compliance checker","采购申请合规检查工具"],["A procurement policy advisor agent","采购政策顾问智能体"]]},
+    "sales":{"mods":["m3","m6","m7","m8"],"wins":[["A customer-reply assistant with your tone and rules","符合您语气与规则的客户回复助手"],["A sales pipeline dashboard","销售漏斗仪表板"],["A quotation calculator app","报价计算器应用"]]},
+    "mgr":{"mods":["m1","m4","m5","fp"],"wins":[["A clear view of where AI fits in your department","清楚掌握AI在部门中的落地点"],["Team dashboards without waiting on IT","无需等IT就能做团队仪表板"],["A 30-60-90 day Copilot adoption plan","30-60-90 天 Copilot 落地计划"]]}
+  };
+  var ex=document.querySelector('.explorer'),out=document.getElementById('rfOut'),wins=document.getElementById('rfWins');
+  document.querySelectorAll('.role').forEach(function(btn){btn.addEventListener('click',function(){
+    var on=btn.getAttribute('aria-pressed')!=='true';
+    document.querySelectorAll('.role').forEach(function(b){b.setAttribute('aria-pressed','false')});
+    document.querySelectorAll('.mod').forEach(function(m){m.classList.remove('hl')});
+    document.querySelectorAll('.cnt').forEach(function(c){c.classList.remove('on')});
+    if(!on){ex.classList.remove('filtering');document.getElementById('rfRole').hidden=true;syncOut();return}
+    btn.setAttribute('aria-pressed','true');ex.classList.add('filtering');
+    var r=R[btn.dataset.role],first=null;
+    r.mods.forEach(function(id){var m=document.querySelector('.mod[data-mod="'+id+'"]');m.classList.add('hl');if(!first)first=m});
+    ['d1','d2'].forEach(function(d){var n=document.querySelectorAll('#pane-'+d+' .mod.hl').length,c=document.querySelector('[data-cnt='+d+']');c.textContent=n;c.classList.toggle('on',n>0)});
+    wins.innerHTML=r.wins.map(function(w){return '<li><span class="en">'+w[0]+'</span><span class="zh">'+w[1]+'</span></li>'}).join('');
+    document.getElementById('rfRole').hidden=false;syncOut();
+    if(first){showTab(document.getElementById(first.closest('.pane').id.replace('pane','tab')));document.querySelectorAll('.mod').forEach(function(m){m.open=m.classList.contains('hl')&&m===first})}
+  })});
+  function syncOut(){out.hidden=document.getElementById('rfRole').hidden&&document.getElementById('rfInd').hidden}
+  var I={
+    "gbs":[["Invoice and vendor query agents for O2C and P2P","用于 O2C 与 P2P 的发票与供应商查询智能体"],["R2R reporting dashboards from system exports","用系统导出数据做 R2R 报表仪表板"],["Ticket triage and compliance-check tools","工单分流与合规检查工具"]],
+    "bank":[["Product and policy FAQ agents for frontliners","前线员工使用的产品与政策 FAQ 智能体"],["Branch and claims performance dashboards","分行与理赔业绩仪表板"],["Document checklists for applications","申请文件检查清单"]],
+    "mfg":[["SOP and quality-procedure assistants","SOP 与品质程序助手"],["Production KPI and downtime dashboards","生产 KPI 与停机仪表板"],["Inspection checklist apps","检验检查清单应用"]],
+    "retail":[["Outlet sales and stock dashboards","门店销售与库存仪表板"],["A store-operations FAQ agent","门店营运 FAQ 智能体"],["Promotion and margin calculators","促销与毛利计算器"]],
+    "energy":[["HSE procedure assistants","HSE 程序助手"],["Project cost and budget dashboards","项目成本与预算仪表板"],["Permit-to-work checklist tools","工作许可检查清单工具"]],
+    "prop":[["Project FAQ agents for sales teams","销售团队用的项目 FAQ 智能体"],["Sales and booking dashboards","销售与订购仪表板"],["Loan and instalment calculators","贷款与分期计算器"]],
+    "health":[["Policy and SOP assistants for staff","员工使用的政策与 SOP 助手"],["Territory and sales performance dashboards","区域与销售业绩仪表板"],["Compliance review checklists","合规审查清单"]],
+    "edu":[["A student and parent enquiry agent","学生与家长咨询智能体"],["Enrolment and results dashboards","招生与成绩仪表板"],["Lesson-planning and quiz tools","教案与测验工具"]],
+    "gov":[["Circular and policy Q&A assistants","通告与政策问答助手"],["Programme performance dashboards","计划绩效仪表板"],["Application screening checklists","申请审核检查清单"]],
+    "sme":[["An AI assistant for customer enquiries","处理客户咨询的AI助手"],["A simple sales and cash-flow dashboard","简易销售与现金流仪表板"],["Quotation and order-tracking apps","报价与订单追踪应用"]]
+  };
+  document.querySelectorAll('.ind').forEach(function(btn){btn.addEventListener('click',function(){
+    var on=btn.getAttribute('aria-pressed')!=='true',box=document.getElementById('rfInd');
+    document.querySelectorAll('.ind').forEach(function(b){b.setAttribute('aria-pressed','false')});
+    if(on){btn.setAttribute('aria-pressed','true');document.getElementById('rfIndWins').innerHTML=I[btn.dataset.ind].map(function(w){return '<li><span class="en">'+w[0]+'</span><span class="zh">'+w[1]+'</span></li>'}).join('');box.hidden=false}else{box.hidden=true}
+    syncOut();
+  })});
+  document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){var p=document.getElementById(b.getAttribute('aria-controls'));var f=p.querySelector('.mod.hl')||p.querySelector('.mod');if(f&&!p.querySelector('.mod[open]'))f.open=true})});
+  var els=document.querySelectorAll(".fact,.rolefinder,.tabs,.sec-head,.build,.lic-card,.dl li,.imp,.step,.mix,.t-photo,.creds,.brands .box,.cta h2,.toolwall");
+  els.forEach(function(e,i){e.classList.add("reveal");e.style.transitionDelay=((i%3)*80)+"ms"});
+  if("IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.12});els.forEach(function(e){io.observe(e)})}else{els.forEach(function(e){e.classList.add("in")})}
+  document.querySelectorAll("[data-set-lang]").forEach(function(b){
+    b.addEventListener("click",function(){setLang(b.dataset.setLang)});
+  });
+})();
+</script>
+</body>
+</html>
